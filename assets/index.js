@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Prénom:", prenom);
         console.log("Email:", email);
         console.log("Mot de passe:", motDePasse); // Ne jamais afficher un mot de passe en production !
+        alert("Connexion réussie !");
+
 
         // Tu pourrais aussi ici envoyer les données vers un serveur avec fetch()
         // Exemple fictif :

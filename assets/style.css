@@ -113,6 +113,11 @@ input:focus{
     border: 1px solid rgba(255, 255, 255, .1);
     box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
 }
+input:focus {
+  outline: none;
+  transform: scale(1.02);
+}
+/* Effet de transition pour les inputs */
 
 /* Style spécifique pour les boutons input */
 input[type="button"]{
@@ -214,7 +219,15 @@ input[type="button"]{
     width: 100px;
     bottom: 1000px; right: -500px;
     z-index: -1;
+}@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
+
+.drop {
+  animation: float 4s ease-in-out infinite;
+}
+
 
 /* Responsive : styles adaptés pour les écrans de moins de 768px */
 @media (max-width: 768px) {
