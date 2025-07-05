@@ -1,0 +1,278 @@
+/* Réinitialise les marges et paddings de tous les éléments, définit la couleur du texte par défaut */
+*{
+    margin: 0;
+    padding: 0;
+    
+    /* box-sizing: border-box; */
+    /* font-family: Arial, sans-serif; */
+    color: #000;
+}
+
+/* Style du body : fond en dégradé, centrage du contenu, police */
+body{
+    background: linear-gradient(45deg, #fc4668, #3f5efb);
+    /* background: linear-gradient(50deg, #958f8f, #f06595); */
+    height: 100vh;
+    width: 92vw ;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Positionnement relatif pour le conteneur principal */
+main{
+    position: relative;
+}
+
+/* Style des icônes */
+i{
+    color: white;
+    font-size: 2rem;
+}
+
+/* Style du titre principal */
+h1{
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+
+/* Style du formulaire avec effet de flou et profondeur */
+form{
+    background: rgba(255, 255, 255, 0.3);
+    padding: 3rem;
+    height: 500px;
+    border-radius: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    /*effet de flou*/
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /*effet de profondeur*/
+    -moz-background-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    text-align: center;           
+}
+
+/* Style des paragraphes */
+p{
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style des liens */
+a{
+    color: #ddd;
+    text-decoration: none;
+}
+
+/* Effet au survol des liens */
+a:hover{
+    text-shadow: 2px 2px 6px hsl(40, 100%, 99%);
+}
+
+/* Style des champs de saisie */
+input{
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+    width: 200px;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    /* -webkit-backdrop-filter: blur(5px); */
+    /*effet de profondeur*/
+    /* -moz-background-filter: blur(5px); */
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ;
+    margin-bottom: 20px;
+}
+
+/* Style du texte d'espace réservé dans les inputs */
+::placeholder{
+    color: black;
+    opacity: 0.5;
+    font-weight: normal; /* valeur incorrecte, devrait être normal, bold, etc. */
+}
+
+/* Effet au survol et focus des inputs */
+input:hover,
+input:focus{
+    border: 1px solid rgba(255, 255, 255, .1);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* Style spécifique pour les boutons input */
+input[type="button"]{
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
+    width: 150px;
+}
+
+/* Styles pour les éléments décoratifs "drop" (gouttes/flou) */
+.drop{
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /*effet de profondeur*/
+    -moz-background-filter: blur(10px);
+    position: absolute;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+}
+
+/* Positionnement et taille des différentes gouttes décoratives */
+.drop-1{
+    height: 80px;
+    width: 80px;
+    top: -20px; left: -40px;
+    z-index: -1;
+}
+.drop-2{
+    height: 80px;
+    width: 80px;
+    bottom: -30px; right: -40px;
+    /* z-index: -1; */
+}
+.drop-3{
+    height: 100px;
+    width: 100px;
+    bottom: 550px; right: -70px;
+    z-index: -1;
+}
+.drop-4{
+    height: 100px;
+    width: 100px;
+    bottom: 100px; left: -80px;
+    /* z-index: -1; */
+}
+.drop-5{
+    height: 100px;
+    width: 100px;
+    bottom: 200px; right: -150px;
+    /* z-index: -1; */
+}
+.drop-6{
+    height: 100px;
+    width: 100px;
+    bottom: 300px; left: -180px;
+    z-index: -1;
+}   
+.drop-7{
+    height: 100px;
+    width: 100px;
+    bottom: 400px; right: -200px;
+    z-index: -1;
+}
+.drop-8{
+    height: 100px;
+    width: 100px;
+    bottom: 500px; left: -250px;
+    z-index: -1;
+}
+.drop-9{
+    height: 100px;
+    width: 100px;
+    bottom: 600px; right: -300px;
+    z-index: -1;
+}
+.drop-10{
+    height: 100px;
+    width: 100px;
+    bottom: 700px; left: -350px;
+    z-index: -1;
+}
+.drop-11{
+    height: 100px;
+    width: 100px;
+    bottom: 800px; right: -400px;
+    z-index: -1;
+}
+.drop-12{
+    height: 100px;
+    width: 100px;
+    bottom: 900px; left: -450px;
+    z-index: -1;
+}
+.drop-13{
+    height: 100px;
+    width: 100px;
+    bottom: 1000px; right: -500px;
+    z-index: -1;
+}
+
+/* Responsive : styles adaptés pour les écrans de moins de 768px */
+@media (max-width: 768px) {
+    body{
+        /* background: linear-gradient(45deg, #958f8f, #f06595); */
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    form{
+        height: 660px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        /* padding: 2rem; */
+        /* margin: 10px 0; */
+        /* display: grid; */
+        /* grid-template-columns: 1fr; */
+        /* grid-template-rows: auto auto auto auto auto; */
+        flex:1
+    }
+    input{
+        width: 80%;
+        height: 10px;
+        /* padding: 1rem; */
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input[type="button"]{
+        width: 80%;
+        height: 50px;
+        margin: 10px auto;
+        font-size: 1.2rem;
+    }
+    i{
+        color: white;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+    }
+    a
+    .drop{
+        height: 60px;
+        width: 60px;
+    }
+}
