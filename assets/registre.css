@@ -1,0 +1,226 @@
+/* Fond avec dégradé */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+   background: linear-gradient(45deg, #fc4668, #3f5efb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  /* font-size: 100px; */
+  /* color: #fff; */
+  position: relative;
+  /* justify-content: center; */
+    /* display: flex; */
+    /* margin-bottom: 20px; */
+    /* animation: fadeIn 1s ease-in-out; */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+  animation: fadeIn 1s ease-in-out;
+  
+    /* text-align: center; */
+    color: white;
+    font-weight: 800;
+    /* font-size: 2.5rem; */
+    /* margin-bottom: 20px; */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+legend {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Conteneur principal */
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* Carte glassmorphism */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  color: #fff;
+}
+
+/* Champs de formulaire */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 90%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+}
+.input-group input::placeholder {
+  color: #000 ;
+    opacity: 0.5;
+}
+button {
+  width: 90%;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+.link a {
+  color: #fff;
+  text-decoration: underline;
+}
+.drop{
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /*effet de profondeur*/
+    -moz-background-filter: blur(10px);
+    position: absolute;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+}
+
+/* Positionnement et taille des différentes gouttes décoratives */
+.drop-1{
+    height: 80px;
+    width: 80px;
+    top: -20px; left: -40px;
+    z-index: -1;
+}
+.drop-2{
+    height: 80px;
+    width: 80px;
+    bottom: -30px; right: -40px;
+    /* z-index: -1; */
+}
+.drop-3{
+    height: 100px;
+    width: 100px;
+    bottom: 550px; right: -70px;
+    z-index: -1;
+}
+.drop-4{
+    height: 100px;
+    width: 100px;
+    bottom: 100px; left: -80px;
+    /* z-index: -1; */
+}
+.drop-5{
+    height: 100px;
+    width: 100px;
+    bottom: 200px; right: -150px;
+    /* z-index: -1; */
+}
+.drop-6{
+    height: 100px;
+    width: 100px;
+    bottom: 300px; left: -180px;
+    z-index: -1;
+}   
+.drop-7{
+    height: 100px;
+    width: 100px;
+    bottom: 400px; right: -200px;
+    z-index: -1;
+}
+.drop-8{
+    height: 100px;
+    width: 100px;
+    bottom: 500px; left: -250px;
+    z-index: -1;
+}
+.drop-9{
+    height: 100px;
+    width: 100px;
+    bottom: 600px; right: -300px;
+    z-index: -1;
+}
+.drop-10{
+    height: 100px;
+    width: 100px;
+    bottom: 700px; left: -350px;
+    z-index: -1;
+}
+.drop-11{
+    height: 100px;
+    width: 100px;
+    bottom: 800px; right: -400px;
+    z-index: -1;
+}
+.drop-12{
+    height: 100px;
+    width: 100px;
+    bottom: 900px; left: -450px;
+    z-index: -1;
+}
+.drop-13{
+    height: 100px;
+    width: 100px;
+    bottom: 1000px; right: -500px;
+    z-index: -1;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.drop {
+  animation: float 4s ease-in-out infinite;
+}
