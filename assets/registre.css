@@ -8,9 +8,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Arial', sans-serif;
   height: 100vh;
-   background: linear-gradient(45deg, #fc4668, #3f5efb);
+    width: auto;
+  background: linear-gradient(50deg, #fff, #3f5efb,#000, #fb3f4c);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,7 +110,7 @@ button {
   cursor: pointer;
   margin-top: 10px;
   font-weight: bold;
-  transition: 0.3s;
+  /* transition: 0.3s; */
 }
 
 button:hover {
@@ -219,7 +220,7 @@ button:hover {
 }
 @keyframes float {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(100px); }
 }
 .drop {
   animation: float 4s ease-in-out infinite;
